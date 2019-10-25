@@ -3,11 +3,14 @@ const app =express()
 const morgan =require('morgan')
 const mongoose =require('mongoose')
 const PORT =process.env.PORT || 6004
+const path = require("path")
+require("dotenv").config()
 
 app.use(express.json())
 app.use(morgan('dev'))
+app.use(express.static(path.join(__dirname, "client", "build")))
 
-mongoose.connect('mongodb://localhost: 27017/pawsomedb',
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost: 27017/pawsomedb',
     {
         useNewUrlParser: true,
         useFindAndModify: true,
@@ -24,6 +27,10 @@ app.use((err,req,res,next)=>{
     console.log(err)
     return res.send({errMsg: err.message})
 })
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 
 app.listen(PORT, () =>{
