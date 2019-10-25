@@ -1,0 +1,39 @@
+nav {
+    position: sticky;
+    top: 0;
+    background: $accent;
+    z-index: 3;
+    padding: 20px;
+    box-shadow: 0px 2px 10px $darkText;
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: $lightText;
+    }
+
+    a:hover {
+        color: $darkText;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.active {
+    color: $darkText;
+}
+
+.donateBtn {
+    background: $lightText;
+    color: $darkText;
+    width: fit-content;
+    height: fit-content;
+    // font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $darkText;
+}

@@ -1,0 +1,42 @@
+.aboutPage {
+    // padding: 5%;
+    padding-top: 0;
+    padding-bottom: 50px;
+    p {
+        font-size: 25px;
+    }
+
+    div {
+        // padding: 50px;
+        margin: 20px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        font-size: 20px;
+        padding: 5px;
+        list-style-type: circle;
+    }
+}
+
+.whoWeAre {
+    border: 2px solid $darkText;
+    box-shadow: 5px 5px 8px $darkText;
+    border-radius: 8px;
+}
+
+.ourServices {
+    border: 2px solid $darkText;
+    box-shadow: 5px 5px 5px $darkText;
+    border-radius: 8px;
+}
+
+.ourNeeds {
+    border: 2px solid $darkText;
+    box-shadow: 5px 5px 5px $darkText;
+    border-radius: 8px;
+}

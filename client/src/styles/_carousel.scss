@@ -1,0 +1,22 @@
+.carousel {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 80px;
+    box-shadow: 7px 7px 10px $darkText;
+}
+
+.carouselBtns {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    button {
+        border: none;
+        margin: 25px;
+        background: $lightText;
+    }
+    
+}
+
+.fa {
+    font-size: 30px;
+}

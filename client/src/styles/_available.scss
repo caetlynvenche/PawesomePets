@@ -1,0 +1,59 @@
+.available {
+    div {
+        img {
+        width: 300px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        }
+        div {
+            // border: solid 4px $darkText;
+            width: 400px;
+            margin: 25px;
+        }
+        // display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    button {
+        padding: 15px;
+        // width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        display: block;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: $lightText;
+        border: 2px solid $darkText;
+        box-shadow: 5px 5px 5px $accent;
+    }
+    button:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+}
+
+.indPet {
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px $darkText;
+    border: $accent 10px solid;
+
+    h5 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    a {
+        width: fit-content;
+        margin: auto;
+        display: block;
+        padding: 10px;
+        color: $accent;
+    }
+
+    a:hover {
+        color: $darkText;
+        cursor: pointer;
+    }
+}

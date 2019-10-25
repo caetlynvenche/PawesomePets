@@ -1,0 +1,136 @@
+$darkText: #342E37;
+$accent: #F48220;
+$compAccent: #2092F4;
+$lightText: rgb(221, 221, 221);
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donateBtn {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .homeMain {
+        padding: 10px;
+    }
+
+    .mission {
+        padding: 20px;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .blog {
+        width: 90%;
+
+        img {
+            margin: auto;
+            display: block;
+        }
+
+        h4 {
+            font-size: 30px;
+            left: 10px;
+        }
+    }
+
+    .aboutPage {
+        padding: 10px;
+
+        div {
+            padding: 20px;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    form {
+        margin: auto 10px;
+    }
+
+    .adopt {
+        section {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div {
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .donate {
+        justify-content: flex-end;
+    }
+
+    .donateBtn {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .homeMain {
+        padding: 5%;
+    }
+
+    .mission {
+        padding: 150px;
+        width: 70%;
+        margin-bottom: 300px;
+    }
+
+    .blog {
+        width: 80%;
+
+        img {
+            float: left;
+        }
+
+        h4 {
+            font-size: 60px;
+            left: 70px;
+        }
+    }
+
+    .aboutPage {
+        padding: 5%;
+
+        div {
+            padding: 50px;
+        }
+    }
+
+    form {
+        width: 400px;
+        margin: auto;
+    }
+
+    .adopt {
+        section {
+            padding: 20px;
+            margin: 25px;
+        }
+        div {
+            padding: 10px;
+            margin: 0px;
+        }
+    }
+}

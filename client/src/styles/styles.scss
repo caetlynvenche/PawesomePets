@@ -1,0 +1,94 @@
+@import './variables';
+@import './nav';
+@import './home';
+@import './available';
+@import './adopt';
+@import './about';
+@import './footer';
+@import './carousel';
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+}
+
+body {
+    background: $lightText;
+    color: $darkText;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.fa-paw {
+    transform: rotate(-45deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: flex;
+}
+
+form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: $accent;
+    box-shadow: 5px 5px 5px $darkText;
+
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: $lightText;
+        margin: 50px 10px 30px 10px;
+        color: $darkText;
+        font-size: 20px;
+    }
+}
+input {
+    font-size: 20px;
+    margin: 5px;
+    color: $darkText;
+    border-radius: 5px;
+    background: $lightText;
+}
+
+select {
+    margin: 10px 25px;
+    padding: 10px;
+    font-size: 20px;
+    background: $lightText;
+    color: $darkText;
+}
+
+label {
+    color: $lightText;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px $darkText;
+}
