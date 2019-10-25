@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LynnKnapp/Pawsome_Pets_Adoption.git"
+    "url": "git+https://github.com/caetlynvenche/PawesomePets.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption/issues"
+    "url": "https://github.com/caetlynvenche/PawesomePets/issues"
   },
-  "homepage": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption#readme",
+  "homepage": "https://github.com/caetlynvenche/PawesomePets#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
